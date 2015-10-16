@@ -8,6 +8,24 @@
 
 #import "PlayingCard.h"
 
+
 @implementation PlayingCard
+
+@synthesize value = _value;  
+
+- (NSInteger) value {
+    return _value + self.name.length;
+}
+
+-(id)initWithName:(NSString *)name andValue:(NSInteger)value
+{
+    self = [super init];
+    if (self) {
+        self.name = name;
+        self.value = value;
+    }
+    return self;
+}
+
 
 @end

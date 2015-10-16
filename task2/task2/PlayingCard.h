@@ -10,4 +10,6 @@
 
 @interface PlayingCard : Card
 
+-(id)initWithName:(NSString *)name andValue:(NSInteger)value;
+
 @end
